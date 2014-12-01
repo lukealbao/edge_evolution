@@ -1,0 +1,268 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+/*** RESET ***/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Function LH", "Futura LH", "Open Sans", "Malgun Gothic";
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	min-width: 960px;
+	max-width: 1920px; 
+    padding-bottom: 150px;
+    overflow: scroll;
+}
+
+/*** HEADER ***/
+header {
+    background: -webkit-linear-gradient(160deg, rgba(86,79,72,1) 30%, rgba(233,230,227,0.2)) no-repeat 0px -72px;
+    background: linear-gradient(160deg, rgba(86,79,72,1) 30%, rgba(233,230,227,0.2)) no-repeat 0px -72px;
+    -webkit-transition: background-position 0.5s ease-in;
+    transition: background-position 0.5s ease-in;
+	position: fixed;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    top: 0;
+	left: 0;
+    right: 0;
+	min-width: 960px;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 36px;
+	margin-bottom: 22px;
+	z-index: 99 !important;
+}
+#logo{
+	display: inline-block;
+	position: relative;
+	text-indent: -9999px;
+	background: url(../img/logo.png) no-repeat;
+	vertical-align: middle;
+	margin-right: 85px;
+    height:47px;  /* height: 36px;*/
+    width: 175px;
+    margin-left: 40px;
+}
+.navigation {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.25em;
+	position: relative;
+	background-color: #670404;
+	-webkit-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+	margin-left: 40px;
+	width: 80px;
+	border: none !important;
+}
+.navigation:before {
+	display: inline-block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 18px solid #670404;
+    -webkit-transition: border-color 0.25s;
+    transition: border-color 0.25s;
+    border-top: 18px solid transparent !important;
+    border-left: 18px solid transparent !important;
+    position: absolute;
+    left: -36px;
+}
+.navigation:after{
+	display: inline-block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 18px solid #670404;
+    -webkit-transition: border-color 0.25s;
+    transition: border-color 0.25s;
+    border-bottom: 18px solid transparent !important;
+    border-right: 18px solid transparent !important;
+    position: absolute;
+    right: -36px;
+}
+.navigation:hover {
+	background-color: #350202;
+	-webkit-transition: background-color 0.25s;
+	transition: background-color 0.25s;
+}
+.navigation:hover:after, .navigation:hover:before {
+	border-color: #350202;
+	-webkit-transition: border-color 0.25s;
+	transition: border-color 0.25s;
+}
+#phone-number {
+	position: relative;
+	float: right;
+	display: inline-block;
+	background-color: #262424;
+	color: #fff;
+	padding-right: 40px;
+}
+#phone-number:before {
+	display: inline-block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 18px solid #262424;
+    border-top: 18px solid transparent;
+    border-left: 18px solid transparent;
+    position: absolute;
+    left: -36px;
+}
+#fb-icon {
+    position: absolute;
+    right: 15px;
+    top: 61px;
+    width: 30px !important;
+}
+
+/*** MAIN CONTENT ***/
+#stage {
+	margin-left: 40px;
+    position: relative;
+    top: 80px;
+    margin-bottom: 10px;
+}
+article {
+    font-size: 13px;
+    position: relative;
+    background-color: rgba(209, 205, 200, .70);
+    border-right: 1px solid#857767;
+    width: 40em;
+    min-height: 250px;
+    /* max-height: 500px; */
+    padding: 1em; 
+}
+article > p {
+    text-indent: 2em;
+    margin-bottom: 1em;
+}
+article:after { /* Clearfix */
+    content: "";
+    display: table;
+    clear: both;
+}
+article.active {
+	display: block;
+}
+article.inactive {
+	display: none;
+}
+article > img {
+    max-width: 200px;
+    max-height: 200px;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+article > h1 {
+	font-size: 30px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 1em;
+	width: 10em;
+}
+#splash {
+    position: relative;
+    margin-top: 70px;
+    border: 0 !important;
+    background-color: transparent !important;
+}
+#splash> p{
+    position: relative;
+    text-indent: 0 !important;
+    top: 30px;
+    font-family: "Open Sans Condensed";
+    font-weight: bolder;
+    font-size: 60px !important;
+    line-height: 0 !important;
+    border-bottom: none !important;
+}
+
+/*** FOOTER ***/
+footer {
+	color: #fff;
+	font-size: 12px;
+	position: fixed;
+	bottom: 0;
+    height: 60px;
+    left: 0;
+    right: 0;
+	background-image: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+#news-bar {
+    font-size: 11px;
+    position: relative;
+    line-height: 22px;
+    background-color: #e4e4e4;
+    width: 100%;
+    min-width: 960px;
+    overflow: visible;
+}
+#news-bar > h2 {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+    font-size: 13px;
+    padding-left: 40px;
+    background-color: #4d3e15;
+    line-height: 24px;
+}
+#news-bar h2:after {
+    display: inline-block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 12px solid #4d3e15;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    right: -24px;
+}
+.news-item {
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 1em;
+    color: #000;
+}
+.news-item:before {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 5px solid #7a4125;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    top: 1px;
+}
+footer > ul {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 40px;
+    margin-top: 5px;
+    line-height: 2em;
+}
+footer li {
+	display: inline-block;
+	float: left;
+	margin-left: 2em;
+}
+footer li:first-child {
+	margin-left: 0;
+}
